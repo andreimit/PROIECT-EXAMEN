@@ -9,7 +9,12 @@ body{
 }
 
 
-
+.statistics{
+    background-color:rgb(106, 145, 48);
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
 .container {
     width: 500px;
     position: absolute;
