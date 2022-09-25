@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    background: url(nutrition-pic.jpg) no-repeat center center / cover;
+    user-select: none;
+}
+
+
+
+.container {
+    width: 500px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(106, 145, 48);
+    opacity: 0.9;
+    border-radius: 1rem;    
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 20px 50px 20px black;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+.input-controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    text-align: left;
+    margin-left: 120px;
+    color: rgb(22, 60, 18);
+    font-weight: bolder;
+    
+}
+
+#height,
+#weight{
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    outline: none;      
+    background: none;
+    border-bottom: 1px solid #d1d6d8;
+    border-right: 1px solid #d1d6d8;
+    border-radius: 2px;
+    width:200px;
+    
+}
+
+#weight:focus,
+#height:focus{
+    border-bottom: 2px solid #d1d6d8;
+    width:300px;
+    transition:0.5s;
+}
+
+#value{
+    color: #57240c;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+
+
+#btn{
+    margin-top: 10px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    color:whitesmoke;
+    background-color: rgb(83, 103, 53);
+    width:150px;
+    padding:10px;
+    border-radius: 10px;
+
+}
+
+#btn:active{
+    background: rgb(83, 103, 53);
+    color: black;
+    box-shadow:0 5px black;
+    transform: translateY(5px);
+}
+
+.loading {
+    display:none;
+}

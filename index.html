@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nutrition App-BMI Calculator</title>
+</head>
+<body>
+    <nav>
+        <!-- aici s-a adaugat pagina catre statistics -->
+        <a href="./statistics.html">Go to statistics</a>
+    </nav>
+    <div class="container">
+        <h4 id="info">Enter your height (cm) and weight (kg)</h4>
+        
+        <p class="input">Height</p>
+        <input type="number" onfocus="this.value=''"
+         id="height" placeholder="Enter your height">
+
+         <p class="input">Weight</p>
+        <input type="number" onfocus="this.value=''"
+         id="weight" placeholder="Enter your weight">
+
+
+        <div class="loading">
+        <img src="loader_800.gif" alt="loader">
+        </div>
+        <p id="value"></p>
+        <p id="explanation"></p>
+
+        <button id="btn" class="calculate">Calculate</button>
+        <button id="btn" class="clear">Clear</button>
+
+    </div>    
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
