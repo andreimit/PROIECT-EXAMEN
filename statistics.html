@@ -51,6 +51,7 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/chart.js"
     ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 
     <script>
@@ -58,6 +59,7 @@
       const savedData = JSON.parse(localStorage.getItem("application-bmi"));
       const statistics = savedData.statistics;
 
+      // Se creeaza un array cu datele necesare pentru grafic
       const week = [];
      
       // Se parcurg si se creeaza structura pentru felul in care le asteapta chart.js
@@ -123,6 +125,7 @@
       // render init block
       const myChart = new Chart(document.getElementById("myChart"), config);
 
+      
       function timeFrame(period) {
         console.log(period.value);
         if (period.value == "week") {
